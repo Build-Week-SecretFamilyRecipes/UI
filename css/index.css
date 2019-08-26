@@ -127,21 +127,99 @@ table {
   border-spacing: 0;
 }
 html {
+  text-size: 10px;
   width: 60%;
   margin-left: 20%;
-  background-color: white;
+  background-color: #eae7dc;
 }
 html body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eae7dc;
+  background-color: white;
   padding: 30px;
+}
+html body h1 {
+  font-size: 2.8rem;
+  font-family: 'Dancing Script', cursive;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid silver;
+}
+.navbar .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 30px;
 }
 .navbar .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+}
+.navbar .nav a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: #e85a4f;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  width: 100%;
+  margin: 30px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid silver;
+}
+.banner {
+  width: 100%;
+}
+h1 {
+  margin: 55px 15px 0px;
+  color: #e85a4f;
+}
+.about-blurb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 30px 50px 50px;
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+}
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+}
+.call-to-action .get-started {
+  color: white;
+  background-color: #e98074;
+  font-size: 1.6rem;
+  padding: 10px 50px;
+  border-radius: 10px;
+  transition-timing-function: ease-in;
+  transition: 0.6s;
+}
+.call-to-action .get-started:hover {
+  background-color: white;
+  color: #e85a4f;
 }

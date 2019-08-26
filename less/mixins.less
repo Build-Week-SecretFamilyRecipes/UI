@@ -4,3 +4,21 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.btn(@color, @bg) {
+    color: @color;
+    background-color: @bg;
+    font-size: 1.6rem;
+    padding: 10px 50px;
+    border-radius: 10px;
+    .ease();
+    &:hover {
+        background-color: white;
+        color: @accent2;
+    }
+}
+
+.ease() {
+    transition-timing-function: ease-in;
+    transition: 0.6s;
+}
