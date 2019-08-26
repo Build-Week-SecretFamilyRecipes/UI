@@ -4,6 +4,7 @@
 
 h1 {
     margin: 30px 15px 0px;
+    font-weight: bold;
     color: @accent2;
 }
 
@@ -17,16 +18,19 @@ h1 {
 }
 
 .container {
-    .flex(row, space-around, center);
+    .flex(row, space-around, flex-start);
     margin-bottom: 40px;
     .infocard {
+        .flex(column, space-between, center);
         width: 25%;
         .infoimg {
             width: 100%;
+            margin: 10px 10px 20px;
         }
         p {
             font-family: @quicksand;
             font-size: 1rem;
+            text-align: justify;
         }
     }
 }

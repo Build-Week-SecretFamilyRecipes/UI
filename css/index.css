@@ -129,7 +129,8 @@ table {
 html {
   text-size: 10px;
   width: 70%;
-  margin-left: 15%;
+  max-width: 1000px;
+  margin: 0 auto;
   background-color: #eae7dc;
 }
 html body {
@@ -193,7 +194,7 @@ html body h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Quicksand', sans-serif;
   width: 100%;
   margin: 30px 0 0;
@@ -205,6 +206,7 @@ html body h1 {
 }
 h1 {
   margin: 30px 15px 0px;
+  font-weight: bold;
   color: #e85a4f;
 }
 .about-blurb {
@@ -222,18 +224,24 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 40px;
 }
 .container .infocard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 25%;
 }
 .container .infocard .infoimg {
   width: 100%;
+  margin: 10px 10px 20px;
 }
 .container .infocard p {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
+  text-align: justify;
 }
 .call-to-action {
   display: flex;
