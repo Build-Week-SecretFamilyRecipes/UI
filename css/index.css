@@ -126,3 +126,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  width: 100%;
+}
+.largequote {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 20%;
+}
+.middle {
+  display: flex;
+  margin: 5% 10%;
+}
+.bodybox {
+  margin: 5% 5%;
+  display: flex;
+  flex-direction: column;
+}
+.bodybox img {
+  height: auto;
+  width: 100%;
+}
+.bodybox h4 {
+  margin-top: 5%;
+  font-size: 23px;
+}
+.bodybox h5 {
+  margin-top: 3%;
+  font-size: 18px;
+}
+.bodybox p {
+  margin-top: 6%;
+  font-size: 14px;
+}
