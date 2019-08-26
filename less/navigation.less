@@ -1,0 +1,27 @@
+.navbar {
+    .flex(row, space-between, center);
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+    
+    .logo {
+        .flex(row, space-around, center);
+        margin: 0px 30px;
+    }
+
+    .nav {
+        .flex(row, space-around, center);
+        // position: fixed;
+        font-family: @quicksand;
+        font-size: 1.2rem;
+        a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: @accent2;
+            .start-now {
+                .btn-small(white, @accent1);
+            }
+        }
+    }
+}
