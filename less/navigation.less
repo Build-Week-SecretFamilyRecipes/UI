@@ -1,12 +1,17 @@
 .navbar {
-    .flex(row, space-between, center);
+    .flex(row, space-between, flex-end);
     width: 100%;
+    margin-top: -20px;
     margin-bottom: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid silver;
+    @media @max800 {
+        .flex(column,center,center);
+    }
     
     .logo {
         .flex(row, space-around, center);
+        height: 75px;
         margin: 0px 30px;
     }
 
@@ -19,9 +24,33 @@
             text-decoration: none;
             margin: 0 20px;
             color: @accent2;
+            .ease();
             .start-now {
                 .btn-small(white, @accent1);
+                @media @max800 {
+                    color: @accent2;
+                    background: white;
+                    font-weight: bold;
+                    border: none;
+                    padding: 0;
+                    &:hover {
+                        color: silver;
+                    }
+                }
             }
+            &:hover {
+                color: silver;
+            }
+            @media @max800 {
+                padding-top:10px;
+            }
+            @media @max500 {
+                padding: 15px 0 10px;
+                border-top: 1px solid silver;
+            }
+        }
+        @media @max500 {
+            .flex(column, space-between, center);
         }
     }
 }

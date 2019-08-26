@@ -131,7 +131,17 @@ html {
   width: 70%;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: #eae7dc;
+  background-image: linear-gradient(to bottom right, #eae7dc, #e9a195);
+}
+@media (max-width: 800px) {
+  html {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    width: 100%;
+  }
 }
 html body {
   display: flex;
@@ -149,17 +159,27 @@ html body h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
+  margin-top: -20px;
   margin-bottom: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid silver;
+}
+@media (max-width: 800px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .navbar .logo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 75px;
   margin: 0px 30px;
 }
 .navbar .nav {
@@ -174,6 +194,8 @@ html body h1 {
   text-decoration: none;
   margin: 0 20px;
   color: #e85a4f;
+  transition-timing-function: ease-in;
+  transition: 0.6s;
 }
 .navbar .nav a .start-now {
   color: white;
@@ -188,6 +210,40 @@ html body h1 {
 .navbar .nav a .start-now:hover {
   background-color: white;
   color: #e85a4f;
+}
+@media (max-width: 800px) {
+  .navbar .nav a .start-now {
+    color: #e85a4f;
+    background: white;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+  }
+  .navbar .nav a .start-now:hover {
+    color: silver;
+  }
+}
+.navbar .nav a:hover {
+  color: silver;
+}
+@media (max-width: 800px) {
+  .navbar .nav a {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .navbar .nav a {
+    padding: 15px 0 10px;
+    border-top: 1px solid silver;
+  }
+}
+@media (max-width: 500px) {
+  .navbar .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .footer {
   display: flex;
@@ -220,6 +276,11 @@ h1 {
   font-size: 1.2rem;
   font-family: 'Quicksand', sans-serif;
 }
+@media (max-width: 800px) {
+  .about-blurb {
+    width: 85%;
+  }
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -232,16 +293,83 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 25%;
+  width: 30%;
 }
 .container .infocard .infoimg {
   width: 100%;
   margin: 10px 10px 20px;
 }
+@media (max-width: 800px) {
+  .container .infocard .infoimg {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .container .infocard .infoimg {
+    width: 90%;
+  }
+}
 .container .infocard p {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   text-align: justify;
+}
+@media (max-width: 800px) {
+  .container .infocard p {
+    width: 45%;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .infocard p {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .container .infocard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .infocard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 800px) {
+  .container .infocard2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container .infocard2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .call-to-action {
   display: flex;
@@ -262,4 +390,37 @@ h1 {
 .call-to-action .get-started:hover {
   background-color: white;
   color: #e85a4f;
+}
+body {
+  width: 100%;
+}
+.largequote {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 20%;
+}
+.middle {
+  display: flex;
+  margin: 5% 10%;
+}
+.bodybox {
+  margin: 5% 5%;
+  display: flex;
+  flex-direction: column;
+}
+.bodybox img {
+  height: auto;
+  width: 100%;
+}
+.bodybox h4 {
+  margin-top: 5%;
+  font-size: 23px;
+}
+.bodybox h5 {
+  margin-top: 3%;
+  font-size: 18px;
+}
+.bodybox p {
+  margin-top: 6%;
+  font-size: 14px;
 }

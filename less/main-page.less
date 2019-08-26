@@ -15,6 +15,9 @@ h1 {
     margin: 30px 50px 50px;
     font-size: 1.2rem;
     font-family: @quicksand;
+    @media @max800 {
+        width: 85%;
+    }
 }
 
 .container {
@@ -22,18 +25,55 @@ h1 {
     margin-bottom: 40px;
     .infocard {
         .flex(column, space-between, center);
-        width: 25%;
+        width: 30%;
         .infoimg {
             width: 100%;
             margin: 10px 10px 20px;
+            @media @max800 {
+                width: 45%;
+            }
+            @media @max500 {
+                width: 90%;
+            }
         }
         p {
             font-family: @quicksand;
             font-size: 1rem;
             text-align: justify;
+            @media @max800 {
+                width: 45%;
+                text-align: left;
+                font-size: 1.2rem;
+            }
+            @media @max500 {
+                width: 90%;
+            }
+        }
+        @media @max800 {
+            .flex(row, space-between, center);
+            width: 100%;
+        }
+        @media @max500 {
+            .flex(column, space-around, center);
+            width: 90%;
+            padding: 20px 0;
         }
     }
+    .infocard2 {
+        @media @max800 {
+            .flex(row-reverse, space-between, center);
+        }
+        @media @max500 {
+            .flex(column, space-around, center);
+            width: 90%;
+            padding: 20px 0;
+        }
+    }
+    @media @max800 {
+        .flex(column, space-between, center);
+    }
 }
+
 
 .call-to-action {
     .flex(row, center, center);
