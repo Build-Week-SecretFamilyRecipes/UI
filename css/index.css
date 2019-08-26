@@ -132,7 +132,7 @@ body {
 .largequote {
   display: flex;
   flex-direction: column;
-  padding: 0% 20%;
+  margin: 0% 20%;
 }
 .middle {
   display: flex;
