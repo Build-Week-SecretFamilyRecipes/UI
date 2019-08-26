@@ -3,22 +3,36 @@
 }
 
 h1 {
-    margin: 55px 15px 0px;
+    margin: 30px 15px 0px;
     color: @accent2;
 }
 
 .about-blurb {
     .flex(row, center, center);
     text-align: center;
-    width: 70%;
+    width: 65%;
     margin: 30px 50px 50px;
     font-size: 1.2rem;
     font-family: @quicksand;
 }
 
+.container {
+    .flex(row, space-around, center);
+    margin-bottom: 40px;
+    .infocard {
+        width: 25%;
+        .infoimg {
+            width: 100%;
+        }
+        p {
+            font-family: @quicksand;
+            font-size: 1rem;
+        }
+    }
+}
+
 .call-to-action {
     .flex(row, center, center);
-    font-family: @quicksand;
     .get-started {
         .btn(white, @accent1);
     }

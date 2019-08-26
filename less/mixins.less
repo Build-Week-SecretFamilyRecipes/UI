@@ -9,7 +9,22 @@
     color: @color;
     background-color: @bg;
     font-size: 1.6rem;
+    font-family: @quicksand;
     padding: 10px 50px;
+    border-radius: 10px;
+    .ease();
+    &:hover {
+        background-color: white;
+        color: @accent2;
+    }
+}
+
+.btn-small(@color, @bg) {
+    color: @color;
+    background-color: @bg;
+    font-size: 1.2rem;
+    font-family: @quicksand;
+    padding: 5px 25px;
     border-radius: 10px;
     .ease();
     &:hover {
