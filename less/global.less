@@ -1,8 +1,17 @@
 html {
     text-size: 10px;
     width: 70%;
-    margin-left: 15%;
-    background-color: @bg-color;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right, @bg-color, #e9a195);
+
+    @media @max800 {
+        width: 90%;
+    }
+
+    @media @max500 {
+        width: 100%;
+    }
 
     body {
         .flex(column, center, center);
