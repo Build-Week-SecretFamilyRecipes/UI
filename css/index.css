@@ -466,23 +466,22 @@ body .call-to-action .get-started:hover {
   }
 }
 .largequote {
-  font-family: 'Quicksand', sans-serif;
   background-color: rgba(233, 128, 116, 0.1);
   display: flex;
   flex-direction: column;
   margin-top: 2%;
-  width: 90%;
+  width: 86%;
   margin: 4% 15%;
   padding: 2% 4% 4% 4%;
 }
 @media (max-width: 800px) {
   .largequote {
-    width: 90%;
+    width: 80%;
   }
 }
 .largequote h4 {
   margin-top: 3%;
-  font-size: 18px;
+  font-size: 24px;
 }
 @media (max-width: 800px) {
   .largequote h4 {
@@ -490,10 +489,12 @@ body .call-to-action .get-started:hover {
   }
 }
 .largequote h5 {
+  font-family: 'Quicksand', sans-serif;
   padding-top: 1%;
-  font-size: 14px;
+  font-size: 16px;
 }
 .largequote p {
+  font-family: 'Quicksand', sans-serif;
   font-style: italic;
   margin-top: 2%;
   font-size: 14px;
@@ -548,16 +549,17 @@ body .call-to-action .get-started:hover {
 @media (max-width: 500px) {
   .bodybox h4 {
     margin-top: 4%;
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 .bodybox h5 {
   margin-top: 3%;
   font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
 }
 @media (max-width: 500px) {
   .bodybox h5 {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .bodybox p {
@@ -568,6 +570,7 @@ body .call-to-action .get-started:hover {
 @media (max-width: 500px) {
   .bodybox p {
     padding: 0 5% 5% 5%;
+    text-align: center;
   }
 }
 .bodybox img {
