@@ -456,14 +456,14 @@ body .call-to-action .get-started:hover {
 .top {
   text-align: center;
 }
+.top img {
+  height: auto;
+  width: 100%;
+}
 @media (max-width: 500px) {
   .top {
     padding: 5%;
   }
-}
-.top img {
-  height: auto;
-  width: 100%;
 }
 .largequote {
   font-family: 'Quicksand', sans-serif;
