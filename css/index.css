@@ -144,6 +144,7 @@ html {
   }
 }
 html body {
+  background: aqua;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,6 +391,27 @@ h1 {
 .call-to-action .get-started:hover {
   background-color: white;
   color: #e85a4f;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.container h4 {
+  margin-top: 5%;
+  font-size: 23px;
+}
+.container h5 {
+  margin-top: 3%;
+  font-size: 18px;
+}
+.container p {
+  margin-top: 6%;
+  font-size: 14px;
+}
+.container img {
+  height: auto;
+  width: 100%;
 }
 .top {
   text-align: center;
