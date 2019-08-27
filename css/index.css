@@ -394,52 +394,126 @@ h1 {
 .top {
   text-align: center;
 }
+@media (max-width: 500px) {
+  .top {
+    padding: 5%;
+  }
+}
 .top img {
   height: auto;
   width: 100%;
 }
 .largequote {
-  background-color: #e98074;
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(233, 128, 116, 0.1);
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
+  width: 90%;
   margin: 4% 15%;
   padding: 2% 4% 4% 4%;
 }
-.largequote h5 {
-  margin-top: 2%;
+@media (max-width: 800px) {
+  .largequote {
+    width: 90%;
+  }
+}
+.largequote h4 {
+  margin-top: 3%;
   font-size: 18px;
 }
-.largequote h6 {
-  margin-top: 2%;
+@media (max-width: 800px) {
+  .largequote h4 {
+    margin-bottom: 1%;
+  }
+}
+.largequote h5 {
+  padding-top: 1%;
   font-size: 14px;
 }
 .largequote p {
+  font-style: italic;
   margin-top: 2%;
   font-size: 14px;
+}
+@media (max-width: 800px) {
+  .largequote {
+    text-align: center;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .largequote {
+    text-align: center;
+    margin: 0% 15%;
+  }
 }
 .middle {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-top: 5%;
+  }
+}
 .bodybox {
+  font-family: 'Quicksand', sans-serif;
   margin: 2% 3%;
   display: flex;
   flex-direction: column;
   width: 34%;
 }
+@media (max-width: 500px) {
+  .bodybox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(233, 128, 116, 0.1);
+  }
+}
 .bodybox h4 {
   margin-top: 5%;
   font-size: 23px;
 }
+@media (max-width: 500px) {
+  .bodybox h4 {
+    margin-top: 4%;
+    font-size: 17px;
+  }
+}
 .bodybox h5 {
   margin-top: 3%;
-  font-size: 18px;
+  font-size: 16px;
+}
+@media (max-width: 500px) {
+  .bodybox h5 {
+    font-size: 15px;
+  }
 }
 .bodybox p {
+  font-style: italic;
   margin-top: 6%;
   font-size: 14px;
+}
+@media (max-width: 500px) {
+  .bodybox p {
+    padding: 0 5% 5% 5%;
+  }
 }
 .bodybox img {
   height: auto;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .bodybox img {
+    padding: 5%;
+  }
 }
