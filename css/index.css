@@ -494,6 +494,7 @@ body .call-to-action .get-started:hover {
   font-size: 16px;
 }
 .largequote p {
+  font-family: 'Quicksand', sans-serif;
   font-style: italic;
   margin-top: 2%;
   font-size: 14px;
