@@ -1,0 +1,98 @@
+.ui-dev,
+.ff-dev {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ui-dev h4,
+.project-lead h4,
+.ff-dev h4,
+.bkend-dev h4 {
+    margin-top: 5%;
+    font-size: 1.3rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .ui-dev,
+    .ff-dev,
+    .team-info,
+    .headshot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    h2 {
+        margin-top: 30px;
+        padding-top: 30px;
+        text-decoration: underline;
+    }
+    h4 {
+        font-weight: bolder;
+        text-decoration: underline;
+        color: #e85a4f;
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #867f7f;
+    }
+}
+
+@media (max-width: 500px) {
+    .ui-dev,
+    .ff-dev,
+    .team-info,
+    .headshot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    h2 {
+        margin-top: 30px;
+        padding-top: 30px;
+        text-decoration: underline;
+    }
+    h4 {
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.ui-dev p,
+.project-lead p,
+.ff-dev p,
+.bkend-dev p {
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.team-info img {
+    height: auto;
+    width: 100%;
+}
+
+.project-lead,
+.bkend-dev {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-info {
+    margin: 2% 3%;
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
