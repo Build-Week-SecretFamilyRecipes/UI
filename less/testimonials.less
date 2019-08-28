@@ -1,59 +1,113 @@
 .top {
-    text-align: center;
- img{
+  text-align: center;
+
+  img {
     height: auto;
     width: 100%;
+  }
+    @media @max500 {
+    padding: 5%;
+  }
 }
-}
-
 
 .largequote {
-  background-color: @accent1;
+  
+  background-color: rgba(233, 128, 116, 0.1);
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
+  width: 86%;
 
-  h5 {
-    margin-top: 2%;
-    font-size: 18px;
+  @media @max800 {
+    width: 80%;
   }
-  h6 {
-    margin-top: 2%;
-    font-size: 14px;
+
+  h4 {
+    margin-top: 3%;
+    font-size:24px;
+    @media @max800 {
+      margin-bottom: 1%;
+    }
+  }
+  h5 {
+    font-family: @quicksand;
+    padding-top: 1%;
+    font-size: 16px;
   }
 
   p {
+    font-family: @quicksand;
+    font-style: italic;
     margin-top: 2%;
     font-size: 14px;
   }
   margin: 4% 15%;
   padding: 2% 4% 4% 4%;
+
+  @media @max800 {
+    text-align: center;
+    padding-bottom: 5%;
+  }
+
+  @media @max500 {
+    text-align: center;
+    margin: 0% 15%;
+  }
 }
 .middle {
   display: flex;
   justify-content: space-evenly;
+
+  @media @max500 {
+    .flex(column, space-between, center);
+    width: 90%;
+    padding-top: 5%;
+  }
 }
 
 .bodybox {
+  font-family: @quicksand;
   margin: 2% 3%;
   display: flex;
   flex-direction: column;
   width: 34%;
+  @media @max500 {
+    width: 100%;
+    .flex(column, space-between, center);
+    background-color: rgba(233, 128, 116, 0.1);
+  }
   h4 {
     margin-top: 5%;
     font-size: 23px;
+    @media @max500 {
+      margin-top: 4%;
+      font-size: 20px;
+    }
   }
 
   h5 {
     margin-top: 3%;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: @quicksand;
+    @media @max500 {
+      font-size: 14px;
+    }
   }
   p {
+    font-style: italic;
     margin-top: 6%;
     font-size: 14px;
+    @media @max500 {
+      padding: 0 5% 5% 5%;
+      text-align: center;
+    }
   }
 
   img {
     height: auto;
     width: 100%;
+    @media @max500 {
+      padding: 5%;
+    }
   }
 }

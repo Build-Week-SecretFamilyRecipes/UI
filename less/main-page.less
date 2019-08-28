@@ -1,83 +1,83 @@
-.banner {
-    width: 100%;
-}
-
-h1 {
-    margin: 30px 15px 0px;
-    font-weight: bold;
-    color: @accent2;
-}
-
-.about-blurb {
-    .flex(row, center, center);
-    text-align: center;
-    width: 65%;
-    margin: 30px 50px 50px;
-    font-size: 1.2rem;
-    font-family: @quicksand;
-    @media @max800 {
-        width: 85%;
+body {
+    .banner {
+        width: 100%;
     }
-}
 
-.container {
-    .flex(row, space-around, flex-start);
-    margin-bottom: 40px;
-    .infocard {
-        .flex(column, space-between, center);
-        width: 30%;
-        .infoimg {
-            width: 100%;
-            margin: 10px 10px 20px;
-            @media @max800 {
-                width: 45%;
-            }
-            @media @max500 {
-                width: 90%;
-            }
+    h1 {
+        margin: 30px 15px 0px;
+    }
+
+    .about-blurb {
+        text-align: center;
+        width: 65%;
+        margin: 30px 50px 50px;
+        font-size: 1.2rem;
+        font-family: @quicksand;
+        @media @max800 {
+            width: 85%;
         }
-        p {
-            font-family: @quicksand;
-            font-size: 1rem;
-            text-align: justify;
-            @media @max800 {
-                width: 45%;
+    }
+
+    .container {
+        .flex(row, space-between, flex-start);
+        width: 100%;
+        margin-bottom: 40px;
+        .infocard {
+            .flex(column, flex-start, center);
+            width: 30%;
+            .infoimg {
+                width: 100%;
+                margin: 10px 10px 20px;
+                @media @max800 {
+                    width: 45%;
+                }
+                @media @max500 {
+                    width: 90%;
+                }
+            }
+            p {
+                font-family: @quicksand;
+                font-size: 1rem;
                 text-align: left;
-                font-size: 1.2rem;
+                @media @max800 {
+                    width: 45%;
+                    text-align: left;
+                    font-size: 1.2rem;
+                }
+                @media @max500 {
+                    width: 90%;
+                }
+            }
+            @media @max800 {
+                .flex(row, space-between, center);
+                width: 100%;
             }
             @media @max500 {
+                .flex(column, space-around, center);
                 width: 90%;
+                padding: 20px 0;
+            }
+        }
+        .infocard2 {
+            @media @max800 {
+                .flex(row-reverse, space-between, center);
+            }
+            @media @max500 {
+                .flex(column, space-around, center);
+                width: 90%;
+                padding: 20px 0;
             }
         }
         @media @max800 {
-            .flex(row, space-between, center);
-            width: 100%;
-        }
-        @media @max500 {
-            .flex(column, space-around, center);
-            width: 90%;
-            padding: 20px 0;
+            .flex(column, space-between, center);
         }
     }
-    .infocard2 {
-        @media @max800 {
-            .flex(row-reverse, space-between, center);
-        }
-        @media @max500 {
-            .flex(column, space-around, center);
-            width: 90%;
-            padding: 20px 0;
-        }
-    }
-    @media @max800 {
-        .flex(column, space-between, center);
-    }
-}
 
 
-.call-to-action {
-    .flex(row, center, center);
-    .get-started {
-        .btn(white, @accent1);
+    .call-to-action {
+        .flex(row, center, center);
+        .get-started {
+            .btn(white, @accent1);
+        }
     }
 }
