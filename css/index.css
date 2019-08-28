@@ -508,12 +508,14 @@ body .call-to-action .get-started:hover {
   flex-direction: column;
   margin-top: 2%;
   width: 86%;
+  font-weight: normal;
   margin: 4% 15%;
   padding: 2% 4% 4% 4%;
 }
 @media (max-width: 800px) {
   .largequote {
     width: 80%;
+    font-weight: normal;
   }
 }
 .largequote h4 {
@@ -522,19 +524,40 @@ body .call-to-action .get-started:hover {
 }
 @media (max-width: 800px) {
   .largequote h4 {
+    font-weight: normal;
     margin-bottom: 1%;
+    text-decoration: none;
+  }
+}
+@media (max-width: 500px) {
+  .largequote h4 {
+    text-decoration: none;
   }
 }
 .largequote h5 {
   font-family: 'Quicksand', sans-serif;
   padding-top: 1%;
-  font-size: 16px;
+  font-size: 13px;
 }
 .largequote p {
+  color: #8e8d8a;
   font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
   font-style: italic;
   margin-top: 2%;
   font-size: 14px;
+}
+@media (max-width: 800px) {
+  .largequote p {
+    font-weight: normal;
+    color: #8e8d8a;
+  }
+}
+@media (max-width: 500px) {
+  .largequote p {
+    font-weight: normal;
+    color: #8e8d8a;
+  }
 }
 @media (max-width: 800px) {
   .largequote {
@@ -585,8 +608,14 @@ body .call-to-action .get-started:hover {
 }
 @media (max-width: 500px) {
   .bodybox h4 {
+    text-decoration: none;
     margin-top: 4%;
-    font-size: 20px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 800px) {
+  .bodybox h4 {
+    text-decoration: none;
   }
 }
 .bodybox h5 {
@@ -600,12 +629,22 @@ body .call-to-action .get-started:hover {
   }
 }
 .bodybox p {
+  font-weight: normal;
   font-style: italic;
+  color: #8e8d8a;
   margin-top: 6%;
   font-size: 14px;
 }
+@media (max-width: 800px) {
+  .bodybox p {
+    font-weight: normal;
+    color: #8e8d8a;
+  }
+}
 @media (max-width: 500px) {
   .bodybox p {
+    font-weight: normal;
+    color: #8e8d8a;
     padding: 0 5% 5% 5%;
     text-align: center;
   }

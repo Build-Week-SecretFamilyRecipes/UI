@@ -5,41 +5,58 @@
     height: auto;
     width: 100%;
   }
-    @media @max500 {
+  @media @max500 {
     padding: 5%;
   }
 }
 
 .largequote {
-  
   background-color: rgba(233, 128, 116, 0.1);
   display: flex;
   flex-direction: column;
   margin-top: 2%;
   width: 86%;
+  font-weight: normal;
 
   @media @max800 {
     width: 80%;
+    font-weight: normal;
   }
 
   h4 {
     margin-top: 3%;
-    font-size:24px;
+    font-size: 24px;
     @media @max800 {
+      font-weight: normal;
       margin-bottom: 1%;
+      text-decoration: none;
+    }
+    @media @max500 {
+      text-decoration: none;
     }
   }
   h5 {
     font-family: @quicksand;
     padding-top: 1%;
-    font-size: 16px;
+    font-size: 13px;
   }
 
   p {
+    color: @font-color;
     font-family: @quicksand;
+    font-weight: normal;
     font-style: italic;
     margin-top: 2%;
     font-size: 14px;
+    @media @max800 {
+      font-weight: normal;
+      color: @font-color;
+    }
+
+    @media @max500 {
+      font-weight: normal;
+      color: @font-color;
+    }
   }
   margin: 4% 15%;
   padding: 2% 4% 4% 4%;
@@ -80,8 +97,12 @@
     margin-top: 5%;
     font-size: 23px;
     @media @max500 {
+      text-decoration: none;
       margin-top: 4%;
-      font-size: 20px;
+      font-size: 24px;
+    }
+    @media @max800 {
+      text-decoration: none;
     }
   }
 
@@ -94,10 +115,19 @@
     }
   }
   p {
+    font-weight: normal;
     font-style: italic;
+    color: @font-color;
     margin-top: 6%;
     font-size: 14px;
+    @media @max800 {
+      font-weight: normal;
+      color: @font-color;
+    }
+
     @media @max500 {
+      font-weight: normal;
+      color: @font-color;
       padding: 0 5% 5% 5%;
       text-align: center;
     }
