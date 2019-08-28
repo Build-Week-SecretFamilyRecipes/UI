@@ -453,6 +453,19 @@ body .call-to-action .get-started:hover {
   font-size: 1rem;
   text-align: justify;
 }
+@media (max-width: 500px) {
+  .about-page .team-box .team .teammate {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .about-page .team-box .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .top {
   text-align: center;
 }
